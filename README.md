@@ -1,1 +1,1 @@
-# Planets
+# Planets, a kind of game
