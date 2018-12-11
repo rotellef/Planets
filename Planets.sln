@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets", "Planets\Planets.csproj", "{C1AC0C64-F844-48E4-9A02-9279A4224F07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1AC0C64-F844-48E4-9A02-9279A4224F07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1AC0C64-F844-48E4-9A02-9279A4224F07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1AC0C64-F844-48E4-9A02-9279A4224F07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1AC0C64-F844-48E4-9A02-9279A4224F07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3885556-FCC2-4EAC-AB90-D4678A4D2D11}
+	EndGlobalSection
+EndGlobal
