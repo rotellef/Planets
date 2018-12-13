@@ -66,8 +66,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Domain\Fleet.cs" />
     <Compile Include="Domain\Ship.cs" />
-    <Compile Include="Ships.cs" />
+    <Compile Include="ShipUtils.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
