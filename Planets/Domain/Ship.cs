@@ -8,10 +8,14 @@ using System.Threading.Tasks;
 
 namespace Planets.Domain
 {
+	public class Ships
+	{
+		public Ship Ship { get; set; }
+		public int Count { get; set; }
+	}
 	public class Ship
 	{
 		public string Name { get; set; }
-
 		[JsonConverter(typeof(StringEnumConverter))]
 		public ShipClass Class { get; set; }
 		[JsonConverter(typeof(StringEnumConverter))]
@@ -32,6 +36,17 @@ namespace Planets.Domain
 
 		[JsonConverter(typeof(StringEnumConverter))]
 		public ShipType Type { get; set; }
+
+		public override int GetHashCode()
+		{
+			return base.GetHashCode();
+		}
+
+		public override bool Equals(object obj)
+		{
+			Ship other = obj as Ship;
+			return Name == other.Name && Class == other.Class;
+		}
 
 		public override string ToString() =>
 			$"{Name}, {Class}, {TargetPrimary}, {TargetSecondary}, {Init}, {Type}";

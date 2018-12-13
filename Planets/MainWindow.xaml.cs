@@ -26,7 +26,7 @@ namespace Planets
 		public MainWindow()
 		{
 
-			foreach (var item in Ships.ShipStats)
+			foreach (var item in ShipUtils.ShipStats)
 			{
 				logger.Debug("{0}", item.Value);
 			}
