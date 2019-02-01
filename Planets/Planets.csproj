@@ -48,6 +48,9 @@
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net461\System.ValueTuple.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -68,6 +71,8 @@
     </ApplicationDefinition>
     <Compile Include="Domain\Fleet.cs" />
     <Compile Include="Domain\Ship.cs" />
+    <Compile Include="Engine\CombatCalculator.cs" />
+    <Compile Include="Engine\CombatResult.cs" />
     <Compile Include="ShipUtils.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>

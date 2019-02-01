@@ -1,14 +1,32 @@
 ﻿using Newtonsoft.Json;
 using Planets.Domain;
-using System;
+using System.IO;
 using System.Collections.Generic;
-using System.Xml.Linq;
 
 namespace Planets
 {
-	internal class ShipUtils
+	public class ShipUtils
 	{
 		private static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
+
+		public static readonly string Interceptor = "Interceptor";
+		public static readonly string Dagger = "Dagger";
+		public static readonly string Torpedo = "Torpedo";
+		public static readonly string WarFrigate = "War Frigate";
+		public static readonly string Destroyer = "Destroyer";
+		public static readonly string WarCruiser = "War Cruiser";
+		public static readonly string Battleship = "Battleship";
+		public static readonly string CargoShip = "CargoShip";
+		public static readonly string AstroPod = "Astro Pod";
+		public static readonly string Phantom = "Phantom";
+		public static readonly string Spider = "Spider";
+		public static readonly string Ghost = "Ghost";
+		public static readonly string Tarantula = "Tarantula";
+		public static readonly string LaserTurret = "Laser Turrent";
+		public static readonly string EmpTurret = "EMP Turrent";
+		public static readonly string PlasmaTurret = "Plasma Turrent";
+		public static readonly string IonTurret = "Ion Turrent";
+
 
 		private static Dictionary<string, Ship> _ships;
 		public static Dictionary<string, Ship> ShipStats
@@ -21,7 +39,7 @@ namespace Planets
 
 
 			string fileName = "shipList.json";
-			var list = JsonConvert.DeserializeObject<List<Ship>>(System.IO.File.ReadAllText(fileName));
+			var list = JsonConvert.DeserializeObject<List<Ship>>(File.ReadAllText(fileName));
 			var dict = new Dictionary<string, Ship>();
 			foreach (var ship in list)
 			{
